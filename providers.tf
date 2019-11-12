@@ -11,7 +11,7 @@ terraform {
   backend "remote" {
     organization = "AabhusanInc"
     workspaces {
-      name= "terraform-signoi-practice"
+      name= "terraform-vpc-module"
     }
   }
 }
