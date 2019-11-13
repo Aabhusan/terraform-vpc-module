@@ -1,4 +1,26 @@
 variable "vpc_region" {
   type="string"
-  #default="us-east-1"
+  
 }
+variable "cidr_block" {
+  type="string"
+}
+variable "environment" {
+  type="string"
+  default="test"
+}
+variable "availability_zones" {
+  type="list"
+
+  
+}
+variable "bastian_instance_type" {
+  type="string"
+
+  
+}
+
+
+
+
+
