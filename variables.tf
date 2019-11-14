@@ -1,24 +1,35 @@
 variable "vpc_region" {
-  type="string"
+  type    ="string"
   
 }
 variable "cidr_block" {
-  type="string"
+  type    ="string"
 }
 variable "environment" {
-  type="string"
-  default="test"
+  type      ="string"
+  default   ="test"
 }
 variable "availability_zones" {
-  type="list"
+  type    ="list"
 
   
 }
-variable "bastian_instance_type" {
-  type="string"
+variable "bastion_instance_type" {
+  type    ="string"
 
   
 }
+variable "aws_ami" {  
+  type    ="map"
+  default = {
+    
+    us-east-1 = "ami-1d4e7a66"
+    
+  }
+
+  
+}
+
 
 
 
